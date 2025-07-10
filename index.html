@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linktree</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --blue-start: #0a84ff;
+      --blue-end: #1e90ff;
+      --bg: #1c1c1e;
+      --surface: #2c2c2e;
+      --text: #ffffff;
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      background: var(--surface);
+      padding: 32px 24px;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: -5px;
+      font-weight: 700;
+    }
+
+    .link-btn {
+      display: block;
+      background: linear-gradient(45deg, var(--blue-start), var(--blue-end));
+      color: white;
+      padding: 14px 20px;
+      border-radius: var(--radius);
+      margin: 12px 0;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s ease, opacity 0.3s ease;
+    }
+
+    .link-btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      border: 3px solid var(--blue-end);
+      object-fit: cover;
+    }
+    
+       .bio {
+      font-size: 0.95rem;
+      color: #aaa;
+      margin-bottom: 10px; '''baixo'''
+      margin-top: 0px; '''cima'''
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="hero1.png" alt="Avatar" class="avatar" />
+    <h1>Rayker Farhat</h1>
+    <p class="bio">Mentor digital</p>
+    <p class="bio2">Acesse os conteúdos abaixo</p>
+    <a href="https://codigoonline.github.io/home" class="link-btn" target="_blank">Método Código Online</a>
+    <a href="https://pay.kirvano.com/d5297454-7435-4682-9039-6d015369c2f9" class="link-btn" target="_blank">Pack +300 Videos lifestyle</a>
+    <p class="bio">© Código online 2025</p>
+  </div>
+</body>
+</html>
