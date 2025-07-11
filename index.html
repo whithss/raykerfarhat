@@ -7,10 +7,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --blue-start: #0a84ff;
-      --blue-end: #1e90ff;
-      --bg: #1c1c1e;
-      --surface: #2c2c2e;
+      --blue-start: #222222;
+      --blue-end: #222222;
+      --bg: #000000;
+      --surface: #000000;
       --text: #ffffff;
       --radius: 16px;
     }
@@ -29,14 +29,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 24px;
+      padding: 16px;
     }
 
     .container {
       width: 100%;
-      max-width: 420px;
+      max-width: 480px;
       background: var(--surface);
-      padding: 32px 24px;
+      padding: 32px 16px;
       border-radius: var(--radius);
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
       text-align: center;
@@ -49,15 +49,26 @@
     }
 
     .link-btn {
-      display: block;
+      display: flex;
+      align-items: center;
       background: linear-gradient(45deg, var(--blue-start), var(--blue-end));
       color: white;
-      padding: 14px 20px;
+      padding: 16px 24px;
       border-radius: var(--radius);
       margin: 12px 0;
       font-weight: 600;
       text-decoration: none;
       transition: transform 0.2s ease, opacity 0.3s ease;
+      text-align: left;
+      width: 100%;
+    }
+
+    .link-btn img {
+      width: 40px;
+      height: 40px;
+      margin-right: 8px;
+      margin-left: -10px;
+      border-radius: 6px;
     }
 
     .link-btn:hover {
@@ -73,15 +84,13 @@
       border: 3px solid var(--blue-end);
       object-fit: cover;
     }
-    
-       .bio {
+
+    .bio {
       font-size: 0.95rem;
       color: #aaa;
-      margin-bottom: 10px; '''baixo'''
-      margin-top: 0px; '''cima'''
+      margin-bottom: 10px;
+      margin-top: 0px;
     }
-    
-    
   </style>
 </head>
 <body>
@@ -89,10 +98,21 @@
     <img src="hero1.png" alt="Avatar" class="avatar" />
     <h1>Rayker Farhat</h1>
     <p class="bio">Mentor digital</p>
-    <p class="bio2">Acesse os conteúdos abaixo</p>
-    <a href="https://codigoonline.github.io/home" class="link-btn" target="_blank">Método Código Online</a>
-    <a href="https://pay.kirvano.com/d5297454-7435-4682-9039-6d015369c2f9" class="link-btn" target="_blank">Pack +300 Videos lifestyle</a>
-    <p class="bio">© Código online 2025</p>
+    <p class="bio2">Links que vão te ajudar a dar início no marketing digital 💶⤵️</p>
+
+    <a href="https://w.app/ev1bt8" class="link-btn" target="_blank">
+      <img src="img1.png" alt="Ícone 1" />Sua primeira venda em 24h
+    </a>
+    <a href="https://codigoonline.github.io/home" class="link-btn" target="_blank">
+      <img src="img2.png" alt="Ícone 2" />Aprenda a começar aqui
+    </a>
+    <a href="https://pay.kirvano.com/d3ec2641-f56c-4ba5-9255-7c9af61e7097" class="link-btn" target="_blank">
+      <img src="img3.png" alt="Ícone 3" />Aplicativo Código Online
+    </a>
+    <a href="https://pay.kirvano.com/d5297454-7435-4682-9039-6d015369c2f9" class="link-btn" target="_blank">
+      <img src="img4.png" alt="Ícone 4" />Pack +300 Videos lifestyle
+    </a>
+    <p class="bio">©Kirvano 2025</p>
   </div>
 </body>
 </html>
